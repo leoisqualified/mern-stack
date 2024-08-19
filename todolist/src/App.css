@@ -1,7 +1,16 @@
+html, body {
+  height: 100%; /* Ensure the body and HTML take up the full height */
+  margin: 0; /* Remove default margin */
+  background-color: white; /* Set background color to white */
+}
+
 body {
-  width: 50%;
   color: azure;
-  align-content: center;
+  margin: auto; /* Center the body content horizontally and vertically */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  flex-direction: column; /* Keep content in a column */
 }
 
 header {
@@ -16,8 +25,14 @@ h1 {
 
 input {
   font-size: 20px;
-  border: none;
-  border-bottom: 1px solid darkred;
+  border: none; /* Remove borders */
+  background-color: white; /* Set background to white */
   outline: none;
   padding: 5px;
+  width: 100%; /* Make the input field wider */
+  max-width: 500px; /* Set a max width to control its length */
+  color: black; /* Set text color to black for better readability */
+  box-sizing: border-box; /* Ensure padding doesn't overflow the container */
+  border-bottom: 1px solid darkred;
 }
+
