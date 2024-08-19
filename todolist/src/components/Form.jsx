@@ -1,8 +1,8 @@
 const Form = () => {
     return ( 
-        <div>
-            
-        </div>
+        <form className="form">
+            <input className="input" placeholder="what to you need a reminder? :D"/>
+        </form>
      );
 }
  
